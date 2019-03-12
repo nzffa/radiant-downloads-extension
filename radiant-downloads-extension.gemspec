@@ -12,7 +12,7 @@ Gem::Specification.new do |s|
   s.summary     = RadiantDownloadsExtension::SUMMARY
   s.description = RadiantDownloadsExtension::DESCRIPTION
 
-  s.add_dependency "paperclip", "~> 2.3.16"
+  s.add_dependency "paperclip", "~> 2.7.0"
 
   ignores = if File.exist?('.gitignore')
     File.read('.gitignore').split("\n").inject([]) {|a,p| a + Dir[p] }
